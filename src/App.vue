@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Masthead />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import '../node_modules/normalize.css/normalize.css';
+import Masthead from './components/Masthead.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Masthead
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
