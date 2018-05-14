@@ -6,7 +6,8 @@
 
 <script>
 import '../node_modules/normalize.css/normalize.css';
-import Masthead from './components/Masthead.vue'
+import './css/variables.css';
+import Masthead from './components/Masthead.vue';
 
 export default {
   name: 'app',
@@ -17,14 +18,16 @@ export default {
 </script>
 
 <style>
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-primary), sans-serif;
   font-size: 62.5%;
 }
 
@@ -42,7 +45,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Pacifico', cursive;
+  font-family: var(--font-heading), cursive;
   font-weight: normal;
   text-align: center;
 }
