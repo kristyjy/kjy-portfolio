@@ -1,6 +1,7 @@
 <template>
   <main id="app">
     <Masthead />
+    <Skills />
   </main>
 </template>
 
@@ -8,11 +9,13 @@
 import '../node_modules/normalize.css/normalize.css';
 import './css/variables.css';
 import Masthead from './components/Masthead.vue';
+import Skills from './components/Skills.vue';
 
 export default {
   name: 'app',
   components: {
-    Masthead
+    Masthead,
+    Skills
   }
 }
 </script>
@@ -29,6 +32,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-primary), sans-serif;
   font-size: 62.5%;
+  color: #333;
 }
 
 html,

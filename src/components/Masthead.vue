@@ -1,5 +1,5 @@
 <template>
-  <main class="masthead">
+  <section class="masthead">
     <div class="masthead-bg">
       <Bubbles />
     </div>
@@ -8,7 +8,7 @@
       <p class="text name" key="name" v-if="showName">I'm <span class="highlight">Kristy</span>.</p>
       <p class="text tagline" key="tagline" v-if="showTagline">I bring designs to life.</p>
     </transition-group>
-  </main>
+  </section>
 </template>
 
 <script>
