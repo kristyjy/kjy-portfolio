@@ -19,7 +19,7 @@ export default {
 <style scoped>
 section {
   width: 100%;
-  height: 100vh;
+  padding-bottom: 20vh;
   position: relative;
 }
 
@@ -32,7 +32,7 @@ section:after {
   height: 0;
   border-style: solid;
   border-width: 30vh 0 0 100vw;
-  border-color: transparent transparent transparent #333;
+  border-color: transparent transparent transparent var(--color1);
 }
 
 h2 {
@@ -41,18 +41,18 @@ h2 {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 768px) {
   h2 {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
 }
 
 @media (min-width: 1100px) {
   h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 </style>

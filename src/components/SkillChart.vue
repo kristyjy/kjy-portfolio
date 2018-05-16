@@ -89,12 +89,7 @@ export default {
         ]
       },
       width: 300,
-      height: 300,
-      colors: [
-        '255, 86, 124',
-        '153, 225, 217',
-        '255, 255, 255'
-      ]
+      height: 300
     }
   },
   methods: {

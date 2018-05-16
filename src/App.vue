@@ -2,6 +2,7 @@
   <main id="app">
     <Masthead />
     <Skills />
+    <CodepenExamples />
   </main>
 </template>
 
@@ -10,12 +11,14 @@ import '../node_modules/normalize.css/normalize.css';
 import './css/variables.css';
 import Masthead from './components/Masthead.vue';
 import Skills from './components/Skills.vue';
+import CodepenExamples from './components/CodepenExamples.vue';
 
 export default {
   name: 'app',
   components: {
     Masthead,
-    Skills
+    Skills,
+    CodepenExamples
   }
 }
 </script>
