@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://kjy-portfolio.netlify.com/* http://www.kristyyeaton.com/:splat 301!
