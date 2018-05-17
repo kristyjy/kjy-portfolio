@@ -21,6 +21,7 @@ section {
   width: 100%;
   padding-bottom: 20vh;
   position: relative;
+  background-color: #eee;
 }
 
 section:after {
@@ -36,10 +37,7 @@ section:after {
 }
 
 h2 {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  width: 100%;
+  margin: 0 0 1rem;
   text-align: center;
   font-size: 2.5rem;
 }

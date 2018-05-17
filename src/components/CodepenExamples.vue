@@ -33,13 +33,27 @@ export default {
 <style scoped>
 .codepen {
   background-color: var(--color1);
+  padding-bottom: 10vh;
+  position: relative;
+}
+
+.codepen:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10vh 100vw;
+  border-color: transparent transparent #333 transparent;
 }
 
 h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #fff;
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
 }
 
 @media (min-width: 768px) {

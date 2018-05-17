@@ -1,24 +1,32 @@
 <template>
-  <main id="app">
-    <Masthead />
-    <Skills />
-    <CodepenExamples />
-  </main>
+  <div id="app">
+    <main>
+      <Masthead />
+      <AboutMe />
+      <Skills />
+      <CodepenExamples />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <script>
 import '../node_modules/normalize.css/normalize.css';
 import './css/variables.css';
 import Masthead from './components/Masthead.vue';
+import AboutMe from './components/AboutMe.vue';
 import Skills from './components/Skills.vue';
 import CodepenExamples from './components/CodepenExamples.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'app',
   components: {
     Masthead,
+    AboutMe,
     Skills,
-    CodepenExamples
+    CodepenExamples,
+    Footer
   }
 }
 </script>

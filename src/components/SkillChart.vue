@@ -57,14 +57,9 @@ export default {
             color: 'rgba(255, 86, 124, 1)'
           },
           {
-            label: 'Gulp',
-            size: 100,
-            color: '#77ada7'
-          },
-          {
             label: 'Jekyll',
             size: 150,
-            color: '#cc4562'
+            color: '#85c6bf'
           },
           {
             label: 'Babel',
@@ -85,6 +80,16 @@ export default {
             label: 'SCSS',
             size: 100,
             color: '#77ada7'
+          },
+          {
+            label: 'D3',
+            size: 100,
+            color: 'rgba(255, 86, 124, 1)'
+          },
+          {
+            label: 'jQuery',
+            size: 100,
+            color: '#85c6bf'
           }
         ]
       },
@@ -94,8 +99,6 @@ export default {
   },
   methods: {
     renderChart() {
-      var color = d3.scaleOrdinal(d3.schemeCategory20);
-
       var bubble = d3.pack(this.skills)
           .size([this.width, this.height])
           .padding(2);
@@ -130,7 +133,7 @@ export default {
           .attr("r", function(d) {
               return d.r;
           })
-          .style("fill", function(d,i) {
+          .style("fill", function(d) {
               return d.data.color;
           });
 
